@@ -31,7 +31,7 @@ In this project, we create a generative AI-enabled web application from scratch 
 
 3. **Install dependencies:**
     ```sh
-    pip install flask boto3 python-dotenv
+    python3 -m pip install flask boto3 python-dotenv
     ```
 
 4. **Set up environment variables:**
