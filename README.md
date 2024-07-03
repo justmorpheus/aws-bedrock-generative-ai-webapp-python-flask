@@ -11,9 +11,11 @@ In this project, we create a generative AI-enabled web application from scratch 
 
 ## Prerequisites
 
-- An AWS account with access to Amazon Bedrock.
+- An AWS account with access to Amazon Bedrock with `amazon.titan-text-premier-v1:0` enabled.
 - Python installed on your system.
 - Basic knowledge of Flask.
+
+> Amazon Bedrock can incur charges.
 
 ## Setup Instructions
 
