@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Security Tips</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; text-align: center; padding: 50px; }
+        #tip { font-size: 1.5em; margin-top: 20px; }
+        button { padding: 10px 20px; font-size: 1em; }
+    </style>
+</head>
+<body>
+    <h1>Cloud Security Tip of the Day</h1>
+    <button onclick="getTip()">Get Tip</button>
+    <div id="tip">Click the button to get today's cloud security tip!</div>
+    <script>
+        async function getTip() {
+            const response = await fetch('/get_tip');
+            const data = await response.json();
+            document.getElementById('tip').innerText = data.tip;
+        }
+    </script>
+</body>
+</html>
